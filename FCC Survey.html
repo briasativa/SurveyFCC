@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\User\Desktop\Projects\FCC Survey\FCC Survey.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Flower Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for participating. Bringing the love of flowers to the people.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+  
+      <div class="form-group">
+        <p>Which option best describes your current interest?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select interest</option>
+          <option value="Appreciator">Garden appreciator</option>
+          <option value="Occasional">Occasional gardener</option>
+          <option value="Gardener">Regular Gardener</option>
+          <option value="Master">Master Gardener</option>
+          <option value="Professional">Garden Industry Professional</option>
+          <option value="Academic">Academic</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Do you purchase flowers regularly?</p>
+        <label>
+          <input name="user-recommend" value="weekly" type="radio" class="input-radio" checked />Weekly or more</label>
+        <label>
+          <input name="user-recommend" value="monthly" type="radio" class="input-radio" />Monthly</label>
+  
+        <label><input name="user-recommend" value="quarterly" type="radio" class="input-radio" />Quarterly</label>
+        <label><input name="user-recommend" value="yearly" type="radio" class="input-radio" />Yearly or less</label>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What is your favorite type of flower?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="annuals">Annuals</option>
+          <option value="perennials">Perennials</option>
+          <option value="flowering-shrubs">Flowering shrubs</option>
+          <option value="flowering-trees">Flowering trees</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What flower related activities would you like to participate in?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label><input name="prefer" value="garden-symposiums" type="checkbox" class="input-checkbox" />Garden symposiums</label>
+        <label>
+          <input name="prefer" value="native-plants" type="checkbox" class="input-checkbox" />Native plant resources</label>
+        <label><input name="prefer" value="how-climate-impacts" type="checkbox" class="input-checkbox" />How climate impacts gardening</label>
+        <label><input name="prefer" value="new-flowers" type="checkbox" class="input-checkbox" />New flower research</label>
+        <label><input name="prefer" value="fertilizer-amendments" type="checkbox" class="input-checkbox" />Best fertilizers and soil amendments</label>
+        <label><input name="prefer" value="flower-design" type="checkbox" class="input-checkbox" />Flower design ideas</label>
+        <label><input name="prefer" value="low-maintenance" type="checkbox" class="input-checkbox" />Low maintenance gardening</label>
+        <label><input name="prefer" value="garden-clubs" type="checkbox" class="input-checkbox" />Local garden clubs and organizations</label>
+        <label><input name="prefer" value="edible" type="checkbox" class="input-checkbox" />How to incorporate edible plants in landscape</label>
+      </div>
+  
+      <div class="form-group">
+        <p>Other activities or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+  <div class="form-group">
+        <p>Would you like to get our newsletter?</p>
+        <label>
+          <input name="user-recommend" value="yes" type="radio" class="input-radio" checked />Yes!</label>
+        <label>
+          <input name="user-recommend" value="no" type="radio" class="input-radio" />Maybe later</label>
+      </div>
+    </form>
+  </div>
+</body>
